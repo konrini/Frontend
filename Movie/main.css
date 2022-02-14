@@ -1,0 +1,98 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* overflow: hidden; */
+}
+
+.header-container {
+    background-color: rgb(150, 204, 164);
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+.logo {
+    font-size: 45px;
+    position: relative;
+    left: 30px;
+}
+
+.menu {
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+    align-self: flex-end;
+}
+
+#Movies {
+    text-align: center;
+}
+
+.select {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sort {
+    position: relative;
+    right: 25px;
+    top: 25px;
+}
+
+.main-container {
+    display: flex;
+    align-items: baseline;
+}
+
+section, aside {
+    margin: 15px;
+}
+
+.movieimg {
+    width: 220px;
+    height: 300px;
+}
+
+.movielist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 1400px;
+}
+
+.movieinfo {
+    margin: 30px 30px;
+}
+
+.seperate {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.heart {
+    width: 30px;
+    height: 25px;
+    align-self: baseline;
+}
+
+aside {
+    position: sticky;
+    top: 0;
+}
+
+.mywatched, .yourwatched {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.footer-container {
+    background-color: rgb(150, 204, 164);
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}

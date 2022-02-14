@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리의 영화 저장소</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- 1. 홈으로 갈 수 있는 로고 -->
+        <!-- 2. 검색을 위한 form -->
+        <!-- 3. 메뉴들의 링크 -->
+        <nav class="header-container">
+            <h1 class="logo">
+                <a href="index.html" style="text-decoration: none; color: black;">
+                    <i class="bi bi-camera-reels-fill">&nbsp</i>우리의 영화 저장소
+                </a>
+            </h1>
+
+            <form method="get" class="search">
+                <input type="search" name="movie" />
+                <input type="submit" value="검색" />
+            </form>
+
+            <ul class="menu">
+                <a href="" id="Login">로그인</a>
+                <a href="" id="Logout">로그아웃</a>
+                <a href="" id="Memberjoin">회원가입</a>
+                <a href="" id="Board">게시판</a>
+                <a href="" id="Mypage">마이페이지</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 4. 영화 정보는 ul 태그를 활용하여 나열 -->
+        <div class="main-container">
+            <section>
+                <div class="select">
+                    <h2 id="Movies">영화 목록</h2>
+                    <form method="get" class="sort">
+                        <select name="sort">
+                            <option value selected>정렬 방법</option>
+                            <option value="title">영화 제목순</option>
+                            <option value="genre">장르별</option>
+                            <option value="long">상영시간 긴 순</option>
+                            <option value="short">상영시간 짧은 순</option>
+                            <option value="heart">찜 순</option>
+                        </select>
+                        <input type="submit" value="조회" />
+                    </form>
+                </div>
+
+                <ol class="movielist">
+                    <li class="movieinfo">
+                        <img src="../img/Wreck-It_Ralph.jpg" class="movieimg" alt="주먹왕 랄프 포스터"><br>
+                        <div class="seperate">
+                            <ul class="moviedetail">
+                                <a href="" class="moviename">주먹왕 랄프</a>
+                                <li class="genre">장르 : 애니메이션</li>
+                                <li class="director">감독 : 리치 무어</li>
+                                <li class="playtime">상영시간(분) : 108</li>
+                            </ul>
+                            <button class="heart">찜❤</button>
+                        </div>
+                    </li>
+
+                    <li class="movieinfo">
+                        <img src="../img/A_Star_Is_Born.jpg" class="movieimg" alt="스타 이즈 본 포스터"><br>
+                        <div class="seperate">
+                            <ul class="moviedetail">
+                                <a href="" class="moviename">스타 이즈 본</a>
+                                <li class="genre">장르 : 로맨스</li>
+                                <li class="director">감독 : 브래들리 쿠퍼</li>
+                                <li class="playtime">상영시간(분) : 135</li>
+                            </ul>
+                            <button class="heart">찜❤</button>
+                        </div>
+                    </li>
+
+                    <li class="movieinfo">
+                        <img src="../img/Coco.jpg" class="movieimg" alt="코코 포스터"><br>
+                        <div class="seperate">
+                            <ul class="moviedetail">
+                                <a href="" class="moviename">코코</a>
+                                <li class="genre">장르 : 애니메이션</li>
+                                <li class="director">감독 : 리 언크리치</li>
+                                <li class="playtime">상영시간(분) : 105</li>
+                            </ul>
+                            <button class="heart">찜❤</button>
+                        </div>
+                    </li>
+
+                    <li class="movieinfo">
+                        <img src="../img/Welcome_to_Dongmakgol.jpg" class="movieimg" alt="웰컴투 동막골 포스터"><br>
+                        <div class="seperate">
+                            <ul class="moviedetail">
+                                <a href="" class="moviename">웰컴투 동막골</a>
+                                <li class="genre">장르 : 드라마</li>
+                                <li class="director">감독 : 박광현</li>
+                                <li class="playtime">상영시간(분) : 133</li>
+                            </ul>
+                            <button class="heart">찜❤</button>
+                        </div>
+                    </li>
+
+                    <li class="movieinfo">
+                        <img src="../img/The_Shawshank_Redemption.jpg" class="movieimg" alt="쇼생크 탈출 포스터"><br>
+                        <div class="seperate">
+                            <ul class="moviedetail">
+                                <a href="" class="moviename">쇼생크 탈출</a>
+                                <li class="genre">장르 : 드라마</li>
+                                <li class="director">감독 : 프랭크 다라본트</li>
+                                <li class="playtime">상영시간(분) : 142</li>
+                            </ul>
+                            <button class="heart">찜❤</button>
+                        </div>
+                    </li>
+
+                    <li class="movieinfo">
+                        <img src="../img/Inception.jpg" class="movieimg" alt="인셉션 포스터"><br>
+                        <div class="seperate">
+                            <ul class="moviedetail">
+                                <a href="" class="moviename">인셉션</a>
+                                <li class="genre">장르 : SF</li>
+                                <li class="director">감독 : 크리스토퍼 놀런</li>
+                                <li class="playtime">상영시간(분) : 148</li>
+                            </ul>
+                            <button class="heart">찜❤</button>
+                        </div>
+                    </li>
+
+                    <li class="movieinfo">
+                        <img src="../img/The_Devil_Wears_Prada.jpg" class="movieimg" alt="악마는 프라다를 입는다 포스터"><br>
+                        <div class="seperate">
+                            <ul class="moviedetail">
+                                <a href="" class="moviename">악마는 프라다를 입는다</a>
+                                <li class="genre">장르 : 드라마</li>
+                                <li class="director">감독 : 데이비드 프랭클</li>
+                                <li class="playtime">상영시간(분) : 109</li>
+                            </ul>
+                            <button class="heart">찜❤</button>
+                        </div>
+                    </li>
+
+                    <li class="movieinfo">
+                        <img src="../img/Vanishing_Time.jpg" class="movieimg" alt="가려진 시간 포스터"><br>
+                        <div class="seperate">
+                            <ul class="moviedetail">
+                                <a href="" class="moviename">가려진 시간</a>
+                                <li class="genre">장르 : 판타지</li>
+                                <li class="director">감독 : 엄태화</li>
+                                <li class="playtime">상영시간(분) : 129</li>
+                            </ul>
+                            <button class="heart">찜❤</button>
+                        </div>
+                    </li>
+
+                    <!-- 영화 중복 -->
+                    <li class="movieinfo">
+                        <img src="../img/Wreck-It_Ralph.jpg" class="movieimg" alt="주먹왕 랄프 포스터"><br>
+                        <div class="seperate">
+                            <ul class="moviedetail">
+                                <a href="" class="moviename">주먹왕 랄프</a>
+                                <li class="genre">장르 : 애니메이션</li>
+                                <li class="director">감독 : 리치 무어</li>
+                                <li class="playtime">상영시간(분) : 108</li>
+                            </ul>
+                            <button class="heart">찜❤</button>
+                        </div>
+                    </li>
+
+                    <li class="movieinfo">
+                        <img src="../img/A_Star_Is_Born.jpg" class="movieimg" alt="스타 이즈 본 포스터"><br>
+                        <div class="seperate">
+                            <ul class="moviedetail">
+                                <a href="" class="moviename">스타 이즈 본</a>
+                                <li class="genre">장르 : 로맨스</li>
+                                <li class="director">감독 : 브래들리 쿠퍼</li>
+                                <li class="playtime">상영시간(분) : 135</li>
+                            </ul>
+                            <button class="heart">찜❤</button>
+                        </div>
+                    </li>
+
+                    <li class="movieinfo">
+                        <img src="../img/Coco.jpg" class="movieimg" alt="코코 포스터"><br>
+                        <div class="seperate">
+                            <ul class="moviedetail">
+                                <a href="" class="moviename">코코</a>
+                                <li class="genre">장르 : 애니메이션</li>
+                                <li class="director">감독 : 리 언크리치</li>
+                                <li class="playtime">상영시간(분) : 105</li>
+                            </ul>
+                            <button class="heart">찜❤</button>
+                        </div>
+                    </li>
+
+                    <li class="movieinfo">
+                        <img src="../img/Welcome_to_Dongmakgol.jpg" class="movieimg" alt="웰컴투 동막골 포스터"><br>
+                        <div class="seperate">
+                            <ul class="moviedetail">
+                                <a href="" class="moviename">웰컴투 동막골</a>
+                                <li class="genre">장르 : 드라마</li>
+                                <li class="director">감독 : 박광현</li>
+                                <li class="playtime">상영시간(분) : 133</li>
+                            </ul>
+                            <button class="heart">찜❤</button>
+                        </div>
+                    </li>
+
+                    <li class="movieinfo">
+                        <img src="../img/The_Shawshank_Redemption.jpg" class="movieimg" alt="쇼생크 탈출 포스터"><br>
+                        <div class="seperate">
+                            <ul class="moviedetail">
+                                <a href="" class="moviename">쇼생크 탈출</a>
+                                <li class="genre">장르 : 드라마</li>
+                                <li class="director">감독 : 프랭크 다라본트</li>
+                                <li class="playtime">상영시간(분) : 142</li>
+                            </ul>
+                            <button class="heart">찜❤</button>
+                        </div>
+                    </li>
+
+                    <li class="movieinfo">
+                        <img src="../img/Inception.jpg" class="movieimg" alt="인셉션 포스터"><br>
+                        <div class="seperate">
+                            <ul class="moviedetail">
+                                <a href="" class="moviename">인셉션</a>
+                                <li class="genre">장르 : SF</li>
+                                <li class="director">감독 : 크리스토퍼 놀런</li>
+                                <li class="playtime">상영시간(분) : 148</li>
+                            </ul>
+                            <button class="heart">찜❤</button>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <aside>
+                <!-- 5. 영화 찜리스트를 넣을 수 있도록 -->
+                <h3>내가 찜한 영화 목록</h3>
+                <ol id="likelist"></ol>
+                <script src="movie.js"></script>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <!-- 6. 이용약관 -->
+        <!-- 7. 오시는 길 -->
+        <div class="footer-container">
+            <a href="" style="text-decoration: none;">개인정보처리방침</a>
+            <a href="" style="text-decoration: none;">이용약관</a>
+            <a href="" style="text-decoration: none;">© 조미곤</a>
+            <a href="mailto:migon99@naver.com" style="text-decoration: none;"><i class="bi bi-envelope">&nbsp</i>이메일</a>
+        </div>
+    </footer>
+</body>
+
+</html>
